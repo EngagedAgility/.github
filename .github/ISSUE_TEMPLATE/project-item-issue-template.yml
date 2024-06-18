@@ -25,9 +25,9 @@ body:
     label: ToDo Items
     description: Complete the following items before requesting a PR review or closing the issue.
     value: |
-      ### The items to complete to satisfy the Definition of Done.
-      - [ ] Change type labels added to this issue.  Refer to the _**Change Type Labels**_ section below.
-      - [ ] Priority label added to this issue.  Refer to the _**Priority Type Labels**_ section below.
+      ### List of items to do
+      - [x] Change type labels added to this issue.  Refer to the _**Change Type Labels**_ section below.
+      - [x] A priority label was added to this issue.  Refer to the _**Priority Type Labels**_ section below.
   validations:
     required: true
     render: markdown
@@ -40,7 +40,7 @@ body:
         - #10
         - #20
     description: |
-      A list of issues that are dependencies of this issue and need to be completed first.
+      A list of issues that need to be completed first, before this issue can be completed.
   validations:
     required: false
 
