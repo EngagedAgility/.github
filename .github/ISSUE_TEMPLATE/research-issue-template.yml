@@ -1,12 +1,14 @@
 name: 🔬 Research Item
-description: Create an issue to perform research.
-labels: ["research"]
+description: Research only work. (This will never entail changes tot he source code of the project.)
 projects: ["EngagedAgility/1"]
-title: "🔬"
+type: "Research"
 body:
 - type: markdown
   attributes:
-    value: "‼️NOTE‼️: Pull requests are not required or used for research issues."
+    value: |
+      > [!NOTE]
+      > 1. The title should be short and descriptive.
+      > 2. Pull requests are not required or used for research issues."
 
 - type: textarea
   attributes:
@@ -44,18 +46,6 @@ body:
   validations:
     required: true
     render: markdown
-
-- type: textarea
-  attributes:
-    label: Issue Dependencies
-    placeholder: |
-      Example:
-        - #10
-        - #20
-    description: |
-      A list of dependencies that need to be finished first.
-  validations:
-    required: false
 
 - type: textarea
   attributes:
