@@ -1,12 +1,18 @@
-name: 🚧 Project Item
-description: Create an issue for the project.
-title: "🚧"
+name: ⚙️CICD
+description: CICD only changes.
 projects: ["EngagedAgility/1"]
+type: "CICD"
 body:
+- type: markdown
+  attributes:
+    value: |
+      > [!NOTE]
+      > The title should be short and descriptive.
+
 - type: textarea
   attributes:
     label: Description
-    description: A description of the feature and/or change.
+    description: A description of CICD changes or additions.
   validations:
     required: true
 
@@ -26,23 +32,11 @@ body:
     description: Complete the following items before requesting a PR review or closing the issue.
     value: |
       ### List of items to do
-      - [x] Change type labels added to this issue.  Refer to the _**Change Type Labels**_ section below.
-      - [x] A priority label was added to this issue.  Refer to the _**Priority Type Labels**_ section below.
+      - [ ] An issue type has been added to this issue.
+      - [ ] A priority label was added to this issue.
   validations:
     required: true
     render: markdown
-
-- type: textarea
-  attributes:
-    label: Issue Dependencies
-    placeholder: |
-      Example:
-        - #10
-        - #20
-    description: |
-      A list of issues that need to be completed first, before this issue can be completed.
-  validations:
-    required: false
 
 - type: textarea
   attributes:
