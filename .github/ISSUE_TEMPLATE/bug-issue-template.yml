@@ -1,0 +1,96 @@
+name: 🐞Bug
+description: Report a bug.
+labels: [⚕️NEEDS TRIAGE]
+projects: ["EngagedAgility/1"]
+type: "Bug"
+body:
+- type: checkboxes
+  attributes:
+    label: Complete The Items Below
+    options:
+    - label: I searched whether or not an issue already exists for the bug I encountered.
+      required: true
+
+- type: textarea
+  attributes:
+    label: Current Behavior
+    description: A concise description of what you're experiencing.
+  validations:
+    required: false
+
+- type: textarea
+  attributes:
+    label: Expected Behavior
+    description: A concise description of what you expected to happen.
+  validations:
+    required: false
+
+- type: textarea
+  attributes:
+    label: Steps To Reproduce
+    description: List out the steps taken to reproduce the issue.
+    placeholder: |
+      1. Navigate to this page/screen...
+      2. Click the button...
+      3. So on...
+      4. So forth...
+  validations:
+    required: true
+
+- type: dropdown
+  attributes:
+    label: Environment
+    description: In which environment does the issue occur?
+    multiple: true
+    options:
+    - Preview
+    - Production
+    - Both
+  validations:
+    required: true
+
+- type: dropdown
+  attributes:
+    label: Operating System(s)
+    description: Which operating system(s) does the bug occur?
+    multiple: true
+    options:
+    - Windows
+    - Mac OS
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: OS Version
+    description: If you know what OS version the bug occurred on, enter it here.
+    placeholder: |
+      Windows:
+        1. Open the start menu.
+        2. Type `winver` and press enter.
+      MacOS:
+        1. Click the Apple icon in the top left corner.
+        2. Click `About This Mac`.
+  validations:
+    required: false
+
+- type: textarea
+  attributes:
+    label: Anything Else
+    description: Links? References? Please provide anything that will give us more context about the issue you encountered. 
+    placeholder: "Tip: You can drag and drop files here (i.e. images, log files etc.)." 
+  validations:
+    required: false
+
+- type: textarea
+  attributes:
+    label: Acceptance Criteria
+    description: The items to complete to satisfy the Definition of Done.
+    value: |
+      ### The items to complete to satisfy the Definition of Done.
+      - [ ] I have fixed the bug, and everything works as expected.
+      - [ ] I have manually tested the changes to confirm that no bugs or behavior changes were introduced.
+      - [ ] All the unit tests have been executed and passed locally after PR work is complete.
+  validations:
+    required: true
+    render: markdown
