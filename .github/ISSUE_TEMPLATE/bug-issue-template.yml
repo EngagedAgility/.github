@@ -10,6 +10,10 @@ body:
     options:
     - label: I searched whether or not an issue already exists for the bug I encountered.
       required: true
+    - label: An issue type has been added to this issue. 
+      required: true
+    - label: A priority label was added to this issue. 
+      required: true
 
 - type: textarea
   attributes:

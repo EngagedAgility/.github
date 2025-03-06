@@ -10,39 +10,43 @@ body:
       > [!NOTE]
       > 1. The title should be short and descriptive.
 
-  - type: checkboxes
-    attributes:
-      label: Complete The Item Below
-      options:
-      - label: I have reviewed and tested all of the issues in the linked milestone.
-        required: true
+- type: checkboxes
+  attributes:
+    label: Complete The Item Below
+    options:
+    - label: I have reviewed and tested all of the issues in the linked milestone.
+      required: true
+    - label: An issue type has been added to this issue. 
+      required: true
+    - label: A priority label was added to this issue. 
+      required: true
 
-  - type: textarea
-    id: extra-info
-    attributes:
-      label: Relevant Information
-      description: Please enter ANY testing-related information here.
+- type: textarea
+  id: extra-info
+  attributes:
+    label: Relevant Information
+    description: Please enter ANY testing-related information here.
 
-  - type: textarea
-    id: dependencies
-    attributes:
-      label: QA Testing Dependencies
-      description: A list of QA testing issues that must be completed before this QA testing issue can be started.
-      placeholder: |
-        Example:
-          - #10 
-          - #20 
-    validations:
-      required: false
+- type: textarea
+  id: dependencies
+  attributes:
+    label: QA Testing Dependencies
+    description: A list of QA testing issues that must be completed before this QA testing issue can be started.
+    placeholder: |
+      Example:
+        - #10 
+        - #20 
+  validations:
+    required: false
 
-  - type: textarea
-      id: test-results
-      attributes:
-        label: QA Testing Results
-        description: The QA Testing results such as issue found and any relative information.
-        placeholder: |
-          Example:
-            - #10 
-            - #20 
-      validations:
-        required: false
+- type: textarea
+  id: test-results
+  attributes:
+    label: QA Testing Results
+    description: The QA Testing results such as issue found and any relative information.
+    placeholder: |
+      Example:
+        - #10 
+        - #20 
+  validations:
+    required: false

@@ -8,7 +8,16 @@ body:
     value: |
       > [!NOTE]
       > 1. The title should be short and descriptive.
-      > 2. Pull requests are not required or used for research issues."
+      > 2. Pull requests are not required or used for research issues.
+
+- type: checkboxes
+  attributes:
+    label: Complete The Item Below
+    options:
+    - label: An issue type has been added to this issue. 
+      required: true
+    - label: A priority label was added to this issue. 
+      required: true
 
 - type: textarea
   attributes:
@@ -33,16 +42,6 @@ body:
       ### The items to complete to satisfy the Definition of Done.
       - [ ] Research complete and issues created _(if needed)_.
       - [ ] If any issues were created, they have been added to the _**Related Work**_ section below.
-  validations:
-    required: true
-    render: markdown
-
-- type: textarea
-  attributes:
-    label: ToDo Items
-    value: |
-      ### The items to complete to satisfy the Definition of Done.
-      - [ ] Priority label added to this issue.  Refer to the _**Priority Type Labels**_ section below.
   validations:
     required: true
     render: markdown

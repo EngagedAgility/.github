@@ -9,6 +9,15 @@ body:
       > [!NOTE]
       > The title should be short and descriptive.
 
+- type: checkboxes
+  attributes:
+    label: Complete The Items Below
+    options:
+    - label: An issue type has been added to this issue. 
+      required: true
+    - label: A priority label was added to this issue. 
+      required: true
+
 - type: textarea
   attributes:
     label: Description
@@ -22,18 +31,6 @@ body:
     description: The items to complete to satisfy the Definition of Done.
     value: |
       ### The items to complete to satisfy the Definition of Done.
-  validations:
-    required: true
-    render: markdown
-
-- type: textarea
-  attributes:
-    label: ToDo Items
-    description: Complete the following items before requesting a PR review or closing the issue.
-    value: |
-      ### List of items to do
-      - [ ] An issue type has been added to this issue.
-      - [ ] A priority label was added to this issue.
   validations:
     required: true
     render: markdown
