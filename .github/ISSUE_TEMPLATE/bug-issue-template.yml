@@ -61,6 +61,7 @@ body:
     options:
     - Windows
     - Mac OS
+    - Both
   validations:
     required: true
 
