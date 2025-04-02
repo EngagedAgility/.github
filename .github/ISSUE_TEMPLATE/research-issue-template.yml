@@ -16,7 +16,7 @@ body:
     options:
     - label: An issue type has been added to this issue. 
       required: true
-    - label: A priority label was added to this issue. 
+    - label: A priority label has been added to this issue.
       required: true
 
 - type: textarea
