@@ -77,7 +77,15 @@ body:
         1. Click the Apple icon in the top left corner.
         2. Click `About This Mac`.
   validations:
-    required: false
+    required: true
+
+- type: textarea
+  attributes:
+    label: Application Version
+    description: Enter the version of the application that the bug occurred on.
+    placeholder: The version can be found in the bottom right corner of the window.
+  validations:
+    required: true
 
 - type: textarea
   attributes:
