@@ -62,6 +62,7 @@ body:
     - Windows
     - Mac OS
     - Both
+    - N/A
   validations:
     required: true
 
@@ -76,6 +77,51 @@ body:
       MacOS:
         1. Click the Apple icon in the top left corner.
         2. Click `About This Mac`.
+  validations:
+    required: true
+
+- type: dropdown
+  attributes:
+    label: Browser(s)
+    description: Which Browser(s) does the bug occur?
+    multiple: true
+    options:
+    - Chrome
+    - Edge
+    - Brave
+    - Firefox
+    - Safari
+    - Other
+    - All
+    - N/A
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: Browser Version
+    description: If you know what browser version the bug occurred on, enter it here.
+    placeholder: |
+      Chrome:
+        1. Open the main browser menu by clicking the 3 dots in the top right corner.
+        2. Mouse over the 'Help' menu item.
+        3. Click the 'About Google Chrome' menu item.
+        4. In the opened tab, take note of the version
+      Edge:
+        1. Open the main browser menu by clicking the 3 dots in the top right corner.
+        2. Mouse over the 'Help and feedback' menu item.
+        3. Click the 'About Microsoft Edge' menu item.
+        4. In the opened tab, take note of the version at the very top.
+      Brave:
+        1. Open the main browser menu by clicking the 3 horizontal lines in the top right corner.
+        2. Mouse over the 'Help' menu item.
+        3. Click the 'About Brave' menu item.
+        4. In the opened tab, take note of the version at the very top.
+      Firefox:
+        1. Open the main browser menu by clicking the 3 horizontal lines in the top right corner.
+        2. Click the 'Help' menu item.
+        3. Click the 'About Firefox' menu item.
+        4. In the opened window, take note of the version.
   validations:
     required: true
 
