@@ -149,7 +149,7 @@ body:
       ### The items to complete to satisfy the Definition of Done.
       - [ ] I have fixed the bug, and everything works as expected.
       - [ ] I have manually tested the changes to confirm that no bugs or behavior changes were introduced.
-      - [ ] All the unit tests have been executed and passed locally after PR work is complete.
+      - [ ] All the unit tests have been executed and passed locally after the PR work has been completed.
   validations:
     required: true
     render: markdown
