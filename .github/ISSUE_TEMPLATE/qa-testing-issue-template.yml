@@ -28,18 +28,6 @@ body:
     description: Please enter ANY testing-related information here.
 
 - type: textarea
-  id: dependencies
-  attributes:
-    label: QA Testing Dependencies
-    description: A list of QA testing issues that must be completed before this QA testing issue can be started.
-    placeholder: |
-      Example:
-        - #10 
-        - #20 
-  validations:
-    required: false
-
-- type: textarea
   id: test-results
   attributes:
     label: QA Testing Results
