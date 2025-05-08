@@ -2,7 +2,7 @@ name: 🧪QA Testing
 description: Manual testing of the software with the included results.
 title: "QA Testing"
 projects: ["EngagedAgility/1"]
-type: "QA Testing"
+type: "QA-Testing"
 body:
 - type: markdown
   attributes:

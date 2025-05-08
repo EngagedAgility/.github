@@ -1,7 +1,7 @@
 name: 📉 Tech Debt
 description: Work involving improvements and refactoring of code to reduce technical debt and development costs. (Does not add features or change behavior.)
 projects: ["EngagedAgility/1"]
-type: "Tech Debt"
+type: "Tech-Debt"
 body:
 - type: markdown
   attributes:

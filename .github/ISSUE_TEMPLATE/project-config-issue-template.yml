@@ -1,7 +1,7 @@
 name: 🔧Project Config
 description: Project related configuration changes. (Not changes to the software itself.)
 projects: ["EngagedAgility/1"]
-type: "Project Config"
+type: "Project-Config"
 body:
 - type: markdown
   attributes:
