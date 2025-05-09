@@ -13,8 +13,6 @@ body:
   attributes:
     label: Complete The Items Below
     options:
-    - label: An issue type has been added to this issue. 
-      required: true
     - label: A priority label has been added to this issue.
       required: true
 
