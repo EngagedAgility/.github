@@ -43,11 +43,12 @@ body:
   attributes:
     label: Environment
     description: In which environment does the issue occur?
+    default: 0
     multiple: true
     options:
+    - N/A
     - Preview
     - Production
-    - Both
   validations:
     required: true
 
@@ -55,12 +56,12 @@ body:
   attributes:
     label: Operating System(s)
     description: Which operating system(s) does the bug occur?
+    default: 0
     multiple: true
     options:
+    - N/A
     - Windows
     - Mac OS
-    - Both
-    - N/A
   validations:
     required: true
 
@@ -82,16 +83,16 @@ body:
   attributes:
     label: Browser(s)
     description: Which Browser(s) does the bug occur?
+    default: 0
     multiple: true
     options:
+    - N/A
     - Chrome
     - Edge
     - Brave
     - Firefox
     - Safari
     - Other
-    - All
-    - N/A
   validations:
     required: true
 
