@@ -1,0 +1,50 @@
+name: 📦Dependency Update
+description: An update to a dependency.
+projects: ["EngagedAgility/1"]
+type: "Dependency-Update"
+body:
+- type: markdown
+  attributes:
+    value: |
+      > [!NOTE]
+      > The title should be short and descriptive.
+
+- type: checkboxes
+  attributes:
+    label: Complete The Items Below
+    options:
+    - label: A priority label has been added to this issue.
+      required: true
+
+- type: textarea
+  attributes:
+    label: Description
+    description: A description of the dependency update.
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: Additional Information
+    placeholder: Add any additional information about the update.
+    description: Additional information on how to update the dependency and any changes that may be required.
+  validations:
+    required: false
+
+- type: textarea
+  attributes:
+    label: Acceptance Criteria
+    description: The items to complete to satisfy the Definition of Done.
+    value: |
+      ### The items to complete to satisfy the Definition of Done.
+  validations:
+    required: true
+    render: markdown
+
+- type: textarea
+  attributes:
+    label: QA Testing Notes
+    placeholder: Add any additional notes for QA testing here.
+    description: Additional information for QA testing.
+  validations:
+    required: false
