@@ -32,11 +32,3 @@ body:
   validations:
     required: true
     render: markdown
-
-- type: textarea
-  attributes:
-    label: QA Testing Notes
-    placeholder: Add any additional notes for QA testing here.
-    description: Additional information for QA testing.
-  validations:
-    required: false
