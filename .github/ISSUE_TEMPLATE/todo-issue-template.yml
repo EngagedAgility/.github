@@ -1,0 +1,37 @@
+name: ✅ ToDo
+description: A simple todo item that does not involve any code changes or development work.
+projects: ["EngagedAgility/1"]
+type: "ToDo"
+body:
+- type: markdown
+  attributes:
+    value: |
+      > [!NOTE]
+      > The title should be short and descriptive.
+
+      > [!WARNING]
+      > No pull request is required for this issue type. It is intended for simple tasks that do not involve code changes or development work.
+
+- type: checkboxes
+  attributes:
+    label: Complete The Items Below
+    options:
+    - label: A priority label has been added to this issue.
+      required: true
+
+- type: textarea
+  attributes:
+    label: Description
+    description: A description of the todo item.
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: Acceptance Criteria
+    description: The items to complete to satisfy the Definition of Done.
+    value: |
+      ### The items to complete to satisfy the Definition of Done.
+  validations:
+    required: true
+    render: markdown
