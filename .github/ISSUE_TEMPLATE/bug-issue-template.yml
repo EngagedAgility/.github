@@ -29,6 +29,14 @@ body:
 
 - type: textarea
   attributes:
+    label: Anything Else
+    description: Links? References? Please provide anything that will give us more context about the issue you encountered. 
+    placeholder: "Tip: You can drag and drop files here (i.e. images, log files etc.)." 
+  validations:
+    required: false
+
+- type: textarea
+  attributes:
     label: Steps To Reproduce
     description: List out the steps taken to reproduce the issue.
     placeholder: |
@@ -131,14 +139,6 @@ body:
     placeholder: The version can be found in the bottom right corner of the window.
   validations:
     required: true
-
-- type: textarea
-  attributes:
-    label: Anything Else
-    description: Links? References? Please provide anything that will give us more context about the issue you encountered. 
-    placeholder: "Tip: You can drag and drop files here (i.e. images, log files etc.)." 
-  validations:
-    required: false
 
 - type: textarea
   attributes:
