@@ -7,10 +7,8 @@ body:
   attributes:
     value: |
       > [!NOTE]
-      > The title should be short and descriptive.
-
-      > [!WARNING]
-      > No pull request is required for this issue type. It is intended for simple tasks that do not involve code changes or development work.
+      > 1. The title should be short and descriptive.
+      > 2. No pull request is required for this issue type. It is intended for simple tasks that do not involve code changes or development work.
 
 - type: checkboxes
   attributes:
