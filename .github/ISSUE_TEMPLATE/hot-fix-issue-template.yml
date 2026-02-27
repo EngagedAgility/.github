@@ -1,0 +1,195 @@
+name: 🔥Hot Fix
+description: Report a production issue that requires an urgent fix.
+labels: [⚕️NEEDS TRIAGE, 🔥HOT-FIX]
+projects: ["EngagedAgility/1"]
+type: "Hot-Fix"
+body:
+- type: checkboxes
+  attributes:
+    label: Complete The Items Below
+    options:
+    - label: I searched whether or not an issue already exists for the issue I encountered.
+      required: true
+    - label: I have confirmed this issue is occurring in the production environment.
+      required: true
+
+- type: dropdown
+  attributes:
+    label: Severity
+    description: How severe is the impact of this issue on production?
+    default: 0
+    multiple: false
+    options:
+    - Critical - System is down or unusable for all users
+    - High - Major feature is broken, no workaround available
+    - Medium - Major feature is broken, workaround available
+    - Low - Minor issue, limited user impact
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: Current Behavior
+    description: A concise description of what you're experiencing in production.
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: Expected Behavior
+    description: A concise description of what you expected to happen.
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: Impact
+    description: Describe the scope of impact. How many users are affected? Is there revenue or data loss?
+    placeholder: |
+      Example:
+        - All users in the NA region are unable to log in.
+        - Approximately 5,000 users impacted.
+        - Revenue impact: transactions cannot be completed.
+  validations:
+    required: true
+
+- type: dropdown
+  attributes:
+    label: Is A Workaround Available?
+    description: Is there a temporary workaround for this issue?
+    default: 0
+    multiple: false
+    options:
+    - "No"
+    - "Yes"
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: Workaround Details
+    description: If a workaround is available, describe it here.
+  validations:
+    required: false
+
+- type: textarea
+  attributes:
+    label: Steps To Reproduce
+    description: List out the steps taken to reproduce the issue.
+    placeholder: |
+      1. Navigate to this page/screen...
+      2. Click the button...
+      3. So on...
+      4. So forth...
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: Anything Else
+    description: Links? References? Log snippets? Please provide anything that will give us more context about the issue.
+    placeholder: "Tip: You can drag and drop files here (i.e. images, log files etc.)."
+  validations:
+    required: false
+
+- type: dropdown
+  attributes:
+    label: Operating System(s)
+    description: Which operating system(s) does the issue occur?
+    default: 0
+    multiple: true
+    options:
+    - N/A
+    - Windows
+    - Mac OS
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: OS Version
+    description: If you know what OS version the issue occurred on, enter it here.
+    placeholder: |
+      Windows:
+        1. Open the start menu.
+        2. Type `winver` and press enter.
+      MacOS:
+        1. Click the Apple icon in the top left corner.
+        2. Click `About This Mac`.
+  validations:
+    required: false
+
+- type: dropdown
+  attributes:
+    label: Browser(s)
+    description: Which Browser(s) does the issue occur?
+    default: 0
+    multiple: true
+    options:
+    - N/A
+    - Chrome
+    - Edge
+    - Brave
+    - Firefox
+    - Safari
+    - Other
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: Browser Version
+    description: If you know what browser version the issue occurred on, enter it here.
+    placeholder: |
+      Chrome:
+        1. Open the main browser menu by clicking the 3 dots in the top right corner.
+        2. Mouse over the 'Help' menu item.
+        3. Click the 'About Google Chrome' menu item.
+        4. In the opened tab, take note of the version
+      Edge:
+        1. Open the main browser menu by clicking the 3 dots in the top right corner.
+        2. Mouse over the 'Help and feedback' menu item.
+        3. Click the 'About Microsoft Edge' menu item.
+        4. In the opened tab, take note of the version at the very top.
+      Brave:
+        1. Open the main browser menu by clicking the 3 horizontal lines in the top right corner.
+        2. Mouse over the 'Help' menu item.
+        3. Click the 'About Brave' menu item.
+        4. In the opened tab, take note of the version at the very top.
+      Firefox:
+        1. Open the main browser menu by clicking the 3 horizontal lines in the top right corner.
+        2. Click the 'Help' menu item.
+        3. Click the 'About Firefox' menu item.
+        4. In the opened window, take note of the version.
+  validations:
+    required: false
+
+- type: textarea
+  attributes:
+    label: Application Version
+    description: Enter the version of the application that the issue occurred on.
+    placeholder: The version can be found in the bottom right corner of the window.
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: Acceptance Criteria
+    description: The items to complete to satisfy the Definition of Done.
+    value: |
+      ### The items to complete to satisfy the Definition of Done.
+      - [ ] I have fixed the issue, and everything works as expected.
+      - [ ] I have manually tested the changes to confirm that no bugs or behavior changes were introduced.
+      - [ ] All the unit tests have been executed and passed locally after the PR work has been completed.
+      - [ ] A rollback plan has been documented in case the fix introduces new issues.
+  validations:
+    required: true
+    render: markdown
+
+- type: textarea
+  attributes:
+    label: QA Testing Notes
+    placeholder: Add any additional notes for QA testing here.
+    description: Additional information for QA testing.
+  validations:
+    required: false
